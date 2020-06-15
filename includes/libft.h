@@ -6,7 +6,7 @@
 /*   By: hkoskela <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 13:02:35 by hkoskela          #+#    #+#             */
-/*   Updated: 2019/11/06 19:51:24 by hkoskela         ###   ########.fr       */
+/*   Updated: 2020/06/11 21:07:41 by hkoskela         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,13 @@ char				*ft_strtrim(char const *s);
 char				*ft_strtrimc(char const *s, char c);
 
 int					ft_atoi(const char *str);
+int					ft_countwords(char *str, char c);
 int					ft_isalnum(int n);
 int					ft_isalpha(int n);
 int					ft_isascii(int n);
 int					ft_isdigit(int n);
 int					ft_isprint(int n);
+int					ft_iswhitespace(int n);
 int					ft_lstlinkc(t_list *begin);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 int					ft_strcmp(const char *s1, const char *s2);
