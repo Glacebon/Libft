@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_square.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hkoskela <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/17 11:19:34 by hkoskela          #+#    #+#             */
-/*   Updated: 2019/10/17 12:16:37 by hkoskela         ###   ########.fr       */
+/*   Created: 2020/06/15 21:19:52 by hkoskela          #+#    #+#             */
+/*   Updated: 2020/06/15 21:19:54 by hkoskela         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isascii(int n)
+#include "libft.h"
+
+size_t		ft_square(size_t n, size_t x)
 {
-	if (n >= 0 && n <= 127)
+	size_t	sum;
+
+	sum = n;
+	if (x == 0)
 		return (1);
-	return (0);
+	while (x > 1)
+	{
+		sum = sum * n;
+		x--;
+	}
+	return (sum);
 }

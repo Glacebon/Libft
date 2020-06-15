@@ -46,10 +46,12 @@ char				*ft_strtrimc(char const *s, char c);
 
 int					ft_atoi(const char *str);
 int					ft_countwords(char *str, char c);
+int					ft_hextoint(char *hex);
 int					ft_isalnum(int n);
 int					ft_isalpha(int n);
 int					ft_isascii(int n);
 int					ft_isdigit(int n);
+int					ft_isupper(int n);
 int					ft_isprint(int n);
 int					ft_iswhitespace(int n);
 int					ft_lstlinkc(t_list *begin);
@@ -64,6 +66,7 @@ int					ft_toupper(int c);
 size_t				ft_lstcontentlen(t_list *elem);
 size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t				ft_strlen(const char *str);
+size_t				ft_square(size_t n, size_t x);
 
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list				*ft_lstnew(void const *content, size_t content_size);
